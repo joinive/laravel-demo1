@@ -1,0 +1,2 @@
+Send POST https://api.jpush.cn/v3/push, body:{"platform":"all","audience":"all","notification":{"alert":"hello tp3.2"},"options":{"sendno":926859135,"apns_production":false}}, times:1
+Send POST https://api.jpush.cn/v3/push, body:{"platform":"all","audience":"all","notification":{"alert":"hello tp3.2"},"options":{"sendno":928552811,"apns_production":false}}, times:1
