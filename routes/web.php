@@ -349,3 +349,5 @@ Route::get('/app', function() {
         return response('https://itunes.apple.com/xxx');
     }
 });
+
+Route::resource('demo', 'DemoController');
