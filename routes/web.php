@@ -351,3 +351,4 @@ Route::get('/app', function() {
 });
 
 Route::resource('demo', 'DemoController');
+Route::resource('solr', 'SolrController');

@@ -48,6 +48,7 @@
         "qcloud/cos-sdk-v5": ">=1.0",
         "rap2hpoutre/laravel-log-viewer": "^0.22.0",
         "simplesoftwareio/simple-qrcode": "^2.0",
+        "solarium/solarium": "^4.1",
         "spatie/eloquent-sortable": "^3.4",
         "spatie/laravel-activitylog": "^2.8",
         "spatie/laravel-backup": "^5.10",
