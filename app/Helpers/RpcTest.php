@@ -6,10 +6,11 @@
  * Time: 0:11
  */
 
-class Test {
+class RpcTest {
 
     public function Hello() {
         return 'Hello World';
     }
+
 }
 

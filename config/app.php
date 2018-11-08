@@ -182,6 +182,9 @@ return [
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
 
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        // RPC
+        Zhuqipeng\LaravelHprose\ServiceProvider::class,
+
     ],
 
     /*
@@ -245,7 +248,9 @@ return [
 
         'Zipper' => Chumper\Zipper\Zipper::class,
 
-        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+
+        'LaravelHproseMethodManage' => Zhuqipeng\LaravelHprose\Facades\HproseMethodManage::class,
 
     ],
 

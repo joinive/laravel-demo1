@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9478b6b312f043ee8bd3145d3f96cda",
+    "content-hash": "1d17cfc8369e60c37ada4a2e3ce19aab",
     "packages": [
         {
             "name": "amphp/amp",
@@ -10326,6 +10326,63 @@
                 "event-loop"
             ],
             "time": "2017-08-28T10:05:00+00:00"
+        },
+        {
+            "name": "zhuqipeng/laravel-hprose",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zhuqipeng/laravel-hprose.git",
+                "reference": "89cea192e6adf1fb7d103be4842484376e1288f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zhuqipeng/laravel-hprose/zipball/89cea192e6adf1fb7d103be4842484376e1288f4",
+                "reference": "89cea192e6adf1fb7d103be4842484376e1288f4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hprose/hprose": "v2.0.*",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Zhuqipeng\\LaravelHprose\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelHproseRouter": "Zhuqipeng\\LaravelHprose\\Facades\\Router"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zhuqipeng\\LaravelHprose\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "朱其鹏",
+                    "email": "28942998@qq.com"
+                }
+            ],
+            "description": "Hprose for Laravel",
+            "keywords": [
+                "Hprose",
+                "laravel"
+            ],
+            "time": "2018-09-19T06:45:40+00:00"
         },
         {
             "name": "zircote/swagger-php",

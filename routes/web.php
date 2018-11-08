@@ -349,6 +349,6 @@ Route::get('/app', function() {
         return response('https://itunes.apple.com/xxx');
     }
 });
-
+Route::get('hprose', 'HproseController@test');
 Route::resource('demo', 'DemoController');
 Route::resource('solr', 'SolrController');
