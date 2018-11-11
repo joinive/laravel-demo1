@@ -38,7 +38,6 @@ class Handler extends ExceptionHandler
         if ($this->shouldReport($exception)) {
             Reporter::report($exception);
         }
-
         //parent::report($exception);
     }
 

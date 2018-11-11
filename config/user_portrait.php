@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Laravel-admin',
+    'name' => 'Laravel-UserPortrait',
 
     /*
     |--------------------------------------------------------------------------
@@ -48,11 +48,11 @@ return [
     */
     'route' => [
 
-        'prefix' => 'admin',
+        'prefix' => 'user_portrait',
 
-        'namespace' => 'App\\Admin\\Controllers',
+        'namespace' => 'App\\UserPortrait\\Controllers',
 
-        'middleware' => ['web', 'admin'],
+        'middleware' => ['web'],
     ],
 
     /*
@@ -65,7 +65,7 @@ return [
     | be set before running `artisan admin::install` to take effect.
     |
     */
-    'directory' => app_path('Admin'),
+    'directory' => app_path('UserPortrait'),
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +75,7 @@ return [
     | Html title for all pages.
     |
     */
-    'title' => 'Admin',
+    'title' => 'UserPortrait',
 
     /*
     |--------------------------------------------------------------------------
@@ -100,17 +100,17 @@ return [
     */
     'auth' => [
 
-        'controller' => App\Admin\Controllers\AuthController::class,
+        'controller' => App\UserPortrait\Controllers\AuthController::class,
 
         'guards' => [
-            'admin' => [
+            'user_portrait' => [
                 'driver'   => 'session',
-                'provider' => 'admin',
+                'provider' => 'user_portrait',
             ],
         ],
 
         'providers' => [
-            'admin' => [
+            'user_portrait' => [
                 'driver' => 'eloquent',
                 'model'  => Encore\Admin\Auth\Database\Administrator::class,
             ],
@@ -129,7 +129,7 @@ return [
     'upload' => [
 
         // Disk in `config/filesystem.php`.
-        'disk' => 'admin',
+        'disk' => 'user_portrait',
 
         // Image and file upload path under the disk above.
         'directory' => [
@@ -199,7 +199,7 @@ return [
          * or specific method to path like: get:admin/auth/logs.
          */
         'except' => [
-            'admin/auth/logs*',
+            'user_portrait/auth/logs*',
         ],
     ],
 
@@ -300,7 +300,7 @@ return [
     | When you use command `php artisan admin:extend` to generate extensions,
     | the extension files will be generated in this directory.
     */
-    'extension_dir' => app_path('Admin/Extensions'),
+    'extension_dir' => app_path('UserPortrait/Extensions'),
 
     /*
     |--------------------------------------------------------------------------

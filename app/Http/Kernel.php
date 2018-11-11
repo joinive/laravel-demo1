@@ -39,6 +39,7 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
 
             \Spatie\ResponseCache\Middlewares\CacheResponse::class,
+
         ],
 
         'api' => [

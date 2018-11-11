@@ -40,13 +40,13 @@ return [
     'connections' => [
 
         'main' => [
-            'salt' => 'abc',
-            'length' => '6',
+            'salt' => 'your-salt-string',
+            'length' => 'your-length-integer',
         ],
 
         'alternative' => [
-            'salt' => 'abcde',
-            'length' => '8',
+            'salt' => 'your-salt-string',
+            'length' => 'your-length-integer',
         ],
 
     ],

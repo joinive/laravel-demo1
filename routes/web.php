@@ -350,6 +350,8 @@ Route::get('/app', function() {
     }
 });
 Route::get('test/config', 'TestController@config');
+Route::get('test/exception', 'TestController@exception');
+Route::post('test/upload', 'TestController@upload');
 Route::get('hprose', 'HproseController@test');
 Route::resource('demo', 'DemoController');
 Route::resource('solr', 'SolrController');

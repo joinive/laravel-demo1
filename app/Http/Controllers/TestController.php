@@ -15,6 +15,7 @@ use Clue\React\Buzz\Browser;
 use Image;
 use Illuminate\Support\Facades\Storage;
 use PDF;
+use phpDocumentor\GraphViz\Exception;
 use Zipper;
 use App\Exports\UsersExport;
 use Maatwebsite\Excel\Facades\Excel;
@@ -227,5 +228,24 @@ class TestController extends Controller
 
     public function config() {
         return config('only_name');
+    }
+
+    public function exception() {
+         //throw new Exception('asdfsdfsd');
+        $a = config('adsf');
+        return $a->toArray();
+
+    }
+
+    public function upload(Request $request) {
+        return [
+            'status' => 0,
+            'path' => 'http://pic.pptbz.com/201506/2015070581208537.JPG'
+        ];
+        $path = $request->file('file')->store(storage_path('upload'));
+        return [
+            'status' => 0,
+            'path' => url('storage/upload')
+        ];
     }
 }

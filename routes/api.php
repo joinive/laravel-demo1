@@ -33,7 +33,7 @@ use Illuminate\Http\Response;
 Route::get('/test1', function (Request $request, Response $response) {
     //return response()->make( 'aaa');
     return response('asdfsd',200);
-});
+})->name('test1');
 
 Route::get('/test1', function (Request $request, Response $response) {
     //return response()->make( 'aaa');
@@ -42,4 +42,4 @@ Route::get('/test1', function (Request $request, Response $response) {
 });
 Route::get('/test2', function (Request $request, Response $response) {
     return response('bbbbbbb',200);
-});
+})->name('test2');
