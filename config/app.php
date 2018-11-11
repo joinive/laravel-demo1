@@ -185,6 +185,9 @@ return [
         // RPC
         Zhuqipeng\LaravelHprose\ServiceProvider::class,
 
+        // VladimirYuldashev\LaravelQueueRabbitMQ\LaravelQueueKafkaServiceProvider::class,
+
+
     ],
 
     /*

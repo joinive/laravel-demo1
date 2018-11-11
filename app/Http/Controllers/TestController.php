@@ -224,4 +224,8 @@ class TestController extends Controller
 
         return 'yes';
     }
+
+    public function config() {
+        return config('only_name');
+    }
 }
