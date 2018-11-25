@@ -190,6 +190,7 @@ return [
         Douyasi\Editor\EditorServiceProvider::class,
         Nwidart\Modules\LaravelModulesServiceProvider::class,
 
+        App\UserPortrait\UserPortraitServiceProvider::class,
     ],
 
     /*
